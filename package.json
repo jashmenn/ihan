@@ -1,0 +1,37 @@
+{
+  "name": "ihan",
+  "version": "1.0.0",
+  "description": "bitcoin-paying npm proxy",
+  "bin": "bin/ihan",
+  "main": "start.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": "Nate Murray <nate@natemurray.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "./bin/ihan start",
+    "payout": "./bin/ihan payout",
+    "test": "mocha"
+  },
+  "pay": ["193WVTLW9ueNyzDZ9cnUw6AKfnr85Q7ARA"],
+  "dependencies": {
+    "assign-deep": "0.4.5",
+    "bcoin": "1.0.0-beta.12",
+    "bluebird": "3.5.0",
+    "knex": "0.13.0",
+    "koa-sendfile": "2.0.0",
+    "leveldown": "1.6.0",
+    "npm-register": "2.2.0",
+    "pg": "6.1.5",
+    "pg-query-stream": "1.0.0",
+    "sqldown": "2.1.0",
+    "sqlite3": "3.1.8",
+    "tunnel": "0.0.4",
+    "yargs": "7.1.0"
+  },
+  "devDependencies": {
+    "expect": "1.20.2",
+    "mocha": "3.3.0"
+  }
+}

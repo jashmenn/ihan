@@ -1,0 +1,67 @@
+#!/usr/bin/env node
+"use strict";
+
+require("yargs")
+  .command({
+    command: "start",
+    desc: "start the server",
+    handler: argv => {
+      require("../start");
+    }
+  })
+  .command({
+    command: "payout",
+    desc: "payout the funds in the wallet",
+    handler: argv => {
+      require("../lib/payout").run(argv);
+    },
+    builder: yargs => {
+      return yargs
+        .option("d", {
+          alias: "dry",
+          desc: "dry run",
+          default: false
+        })
+        .option("m", {
+          alias: "max",
+          desc: "max satoshis to pay at once"
+        })
+        .number("m")
+        .number(["max"]);
+    }
+  })
+  .command({
+    command: "status",
+    desc: "display helpful info",
+    handler: argv => {
+      require("../lib/status").run(argv);
+    }
+  })
+  .command({
+    command: "set-primary-wallet",
+    desc: "set the primary wallet",
+    handler: argv => {
+      require("../lib/set-primary-wallet").run(argv);
+    },
+    builder: yargs => {
+      return yargs
+        .option("m", {
+          alias: "mnemonic",
+          desc: "mneomnic phrase for seed"
+        })
+        .option("y", {
+          alias: "imsure",
+          desc: "pass if you're really sure you want to do this"
+        })
+        .demandOption(
+          ["imsure"],
+          "This will swap out your primary wallet with a new wallet. Pass --imsure to confirm that you really do want to do this."
+        )
+        // TODO, eventually support setting the key directly
+        .demandOption(["mnemonic"], "mnemonic required");
+    }
+  })
+  .demandCommand()
+  .strict()
+  .help()
+  .version().argv;
