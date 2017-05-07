@@ -1,0 +1,25 @@
+{
+  "name": "ihan",
+  "description": "A bitcoin paying npm proxy",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "repository": "https://github.com/eigenjoy/han",
+  "keywords": ["node", "npm", "btc"],
+  "env": {
+    "NPM_REGISTER_STORAGE": "fs",
+    "AWS_ACCESS_KEY_ID": "",
+    "AWS_SECRET_ACCESS_KEY": "",
+    "AWS_S3_BUCKET": "",
+    "CACHE_PACKAGE_TTL": "60",
+    "NODE_ENV": "production",
+    "UPLINK": "https://registry.npmjs.org",
+    "BTC_FS_DIRECTORY": "tmp",
+    "BTC_NETWORK": "main",
+    "BTC_NODES": "",
+    "BTC_FEE_RATE": "101",
+    "BTC_MAX_OUTBOUND": ""
+  },
+  "addons": [
+    "heroku-redis",
+    "heroku-postgresql"
+  ]
+}
