@@ -35,6 +35,13 @@ require("yargs")
     desc: "display helpful info",
     handler: argv => {
       require("../lib/status").run(argv);
+    },
+    builder: yargs => {
+      return yargs
+        .option("p", {
+          alias: "private",
+          desc: "show private info"
+        })
     }
   })
   .command({
