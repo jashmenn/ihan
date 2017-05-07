@@ -11,7 +11,7 @@ module.exports = assignDeep(parentConfig, {
     network: env.BTC_NETWORK || "main",
     nodes: env.BTC_NODES,
     logLevel: env.BTC_LOG_LEVEL || "debug",
-    maxOutbound: env.BTC_MAX_OUTBOUND,
-    feeRate: env.BTC_FEE_RATE || 101
+    maxOutbound: env.BTC_MAX_OUTBOUND ? parseInt(env.BTC_MAX_OUTBOUND) : null,
+    feeRate: env.BTC_FEE_RATE ? parseInt(env.BTC_FEE_RATE) : 101
   }
 });

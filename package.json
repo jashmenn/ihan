@@ -11,6 +11,7 @@
   "license": "MIT",
   "scripts": {
     "start": "./bin/ihan start",
+    "status": "./bin/ihan status",
     "payout": "./bin/ihan payout",
     "test": "mocha"
   },
