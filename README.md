@@ -171,7 +171,7 @@ The `pay` key can accept:
 
 ## Testing
 
-You can test this locally by using your own test network and miners via [`freewil/bitcoin-testnet-box`](https://github.com/freewil/bitcoin-testnet-box).
+You can test this locally by using your own test network and miners via [`freewil/bitcoin-testnet-box`](https://github.com/freewil/bitcoin-testnet-box). (See also [this video](https://www.youtube.com/watch?v=LLZNvl90PC0) by the author on how to setup a local testnet.)
 
 ```
 # in tab one:
@@ -211,6 +211,10 @@ Keep in mind:
 | [<img src="https://avatars1.githubusercontent.com/u/4318?v=3" width="100px;"/><br /><sub>Nate Murray</sub>](http://eigenjoy.com)<br />[💬](#question-jashmenn "Answering Questions") [💻](https://github.com/jashmenn/ihan/commits?author=jashmenn "Code") |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## Security Notice
+
+Please understand that this project keeps your private keys in a wallet on the Postgres server. This means anyone with access to either your database or the ability run commands on this Heroku instance can access your private keys (e.g. control all coins sent to this wallet). Please read the license.
 
 ## License
 
