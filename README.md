@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="doc/ihan-banner.png" alt="Ihan - Bitcoin Paying npm Proxy"/>
+</p>
+
 # ihan - bitcoin-paying npm proxy 💰
 
 [![chat][chat-badge]][chat]
