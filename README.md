@@ -208,7 +208,7 @@ Keep in mind:
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars1.githubusercontent.com/u/4318?v=3" width="100px;"/><br /><sub>Nate Murray</sub>](http://eigenjoy.com)<br />[<U+1F4AC>](#question-jashmenn "Answering Questions") [<U+1F4BB>](https://github.com/jashmenn/ihan/commits?author=jashmenn "Code") |
+| [<img src="https://avatars1.githubusercontent.com/u/4318?v=3" width="100px;"/><br /><sub>Nate Murray</sub>](http://eigenjoy.com)<br />[💬](#question-jashmenn "Answering Questions") [💻](https://github.com/jashmenn/ihan/commits?author=jashmenn "Code") |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
