@@ -4,7 +4,6 @@
 
 # ihan - bitcoin-paying npm proxy 💰
 
-[![chat][chat-badge]][chat]
 [![version][version-badge]][package]
 [![MIT License][license-badge]][LICENSE]
 
@@ -46,7 +45,7 @@ Add `pay` to your `package.json` like this:
 }
 ```
 
-> To add multiple payees, see [pay format](#pay_format) below
+> To add multiple payees, see [pay format](#pay-format) below
 
 If you don't already have an address, you can easily generate one by running [gen-hd-keypair](https://github.com/jashmenn/gen-hd-keypair):
 
@@ -143,7 +142,7 @@ See: [payout.js](lib/payout.js) for the details.
 
 To fund this work, ihan gets a proportional share **as if ihan itself were installed once per npm install session**.
 
-## Pay Format {#pay_format}
+## Pay Format
 
 The `pay` key can accept:
 
