@@ -66,4 +66,5 @@ typings/
 bcoindata
 .\#*
 tmp
+.all-contributorsrc
 commands.txt
